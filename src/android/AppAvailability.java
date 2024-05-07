@@ -10,6 +10,8 @@ import android.content.Context;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageInfo;
 
+import static javax.swing.JOptionPane.showMessageDialog;
+
 public class AppAvailability extends CordovaPlugin {
 
     @Override
@@ -23,7 +25,7 @@ public class AppAvailability extends CordovaPlugin {
     }
 
     private void checkAvailability(String packageName, CallbackContext callbackContext) {
-        JOptionPane.showMessageDialog(null, "My Goodness, this is so concise");
+        showMessageDialog(null, "This is even shorter");
         
         PackageInfo packageInfo = getAppPackageInfo(packageName);
         if (packageInfo != null) {
