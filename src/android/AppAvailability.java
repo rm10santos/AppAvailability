@@ -23,6 +23,8 @@ public class AppAvailability extends CordovaPlugin {
     }
 
     private void checkAvailability(String packageName, CallbackContext callbackContext) {
+        JOptionPane.showMessageDialog(null, "My Goodness, this is so concise");
+        
         PackageInfo packageInfo = getAppPackageInfo(packageName);
         if (packageInfo != null) {
             try {
