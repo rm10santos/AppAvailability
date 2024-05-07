@@ -24,7 +24,7 @@ public class AppAvailability extends CordovaPlugin {
 
     private void checkAvailability(String packageName, CallbackContext callbackContext) {
                 callbackContext.success("1");
-        
+        /*
         PackageInfo packageInfo = getAppPackageInfo(packageName);
                 callbackContext.success("2");
         if (packageInfo != null) {
@@ -37,6 +37,7 @@ public class AppAvailability extends CordovaPlugin {
         } else {
             callbackContext.error("App not found");
         }
+        */
     }
 
     private PackageInfo getAppPackageInfo(String packageName) {
